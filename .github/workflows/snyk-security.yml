@@ -15,3 +15,5 @@ jobs:
         uses: snyk/actions/python@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN_EU }}
+        with:
+         command: code test
