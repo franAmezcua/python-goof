@@ -56,7 +56,7 @@ jobs:
       - name: Snyk Open Source monitor
         run: snyk monitor --all-projects
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN_EU }}
           
         # Runs Snyk Infrastructure as Code (IaC) analysis and uploads result to Snyk.
         # Use || true to not fail the pipeline.
