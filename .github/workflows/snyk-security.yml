@@ -55,8 +55,7 @@ jobs:
         # Runs Snyk Open Source (SCA) analysis and uploads result to Snyk. Updated to use API KEY FOR EU
       - name: Snyk Open Source monitor
         run: snyk monitor --all-projects
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_API_EU }}
+        
 
         # Runs Snyk Infrastructure as Code (IaC) analysis and uploads result to Snyk.
         # Use || true to not fail the pipeline.
