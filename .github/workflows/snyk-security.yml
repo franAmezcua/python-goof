@@ -16,4 +16,4 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN_EU }}
         with:
-         command: code test
+         command: monitor
